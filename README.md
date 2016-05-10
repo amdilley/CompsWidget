@@ -17,5 +17,5 @@ Feel free to use any front end libraries/tools that you would like, but make sur
 
 ### Mockups
 
-![Real Estate Listing Widget](img/comp.png)
+![Real Estate Listing Widget](app/img/comp.png)
 
