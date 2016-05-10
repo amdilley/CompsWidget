@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en" ng-app="compsWidgetApp">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Comps Widget</title>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="css/app.css">
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/angular-resource/angular-resource.js"></script>
+  <script src="js/services.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/controllers.js"></script>
+</head>
+<body ng-controller="HouseListCtrl">
+  <div class="col-xs-8 col-xs-offset-2 list-container">
+    <h4 class="col-xs-12">Awesome Listings Widget</h4>
+    <div ng-view></div>
+  </div>
+</body>
+</html>

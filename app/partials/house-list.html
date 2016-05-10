@@ -1,0 +1,29 @@
+<div class="container-fluid">
+  <div>
+    <div>
+      <button ng-click="sortBy = 'cost'" class="btn" ng-class="{ selected: sortBy === 'cost' }">Price</button>
+      <button ng-click="sortBy = 'beds'" class="btn" ng-class="{ selected: sortBy === 'beds' }">Beds</button>
+      <button ng-click="sortBy = 'sqft'" class="btn" ng-class="{ selected: sortBy === 'sqft' }">Sq. ft.</button>
+    </div>
+    <div class="house-list">
+      <ul class="houses">
+        <li ng-repeat="house in houses | orderBy:sortBy" class="thumbnail col-xs-12 col-md-6 house">
+          <div class="thumb-container">
+            <img src="{{ house.img }}" class="thumb">
+          </div>
+          <div class="details-container">
+            <a href="{{ house.url }}" class="address">
+              <div class="street">{{ house.street }}</div>
+              <div class="city">{{ house.city }}</div>
+            </a>
+            <div class="cost">{{ house.displayCost }}</div>
+            <div class="specs">
+              {{ house.beds }} beds &middot; {{ house.baths }} baths &middot; {{ house.sqft }} sq ft
+            </div>
+            <div ng-if="house.built !== undefined" class="built">Built in {{ house.built }}</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

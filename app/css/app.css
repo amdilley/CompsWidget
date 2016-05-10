@@ -1,0 +1,77 @@
+
+
+/* Buttons */
+.btn {
+  width: 140px;
+  color: #fff;
+  background: #74c005;
+}
+
+.btn:focus {
+  color: #fff;
+  outline: none;
+}
+
+.btn.selected {
+  background: #0074e4;
+}
+
+
+/* House Info Panels */
+.houses {
+  padding: 0;
+}
+
+.house {
+  position: relative;
+  margin: 4px;
+  width: 450px;
+  border-radius: 0;
+}
+
+.thumb-container, .details-container {
+  float: left;
+}
+
+.thumb-container {
+  margin: 5px;
+  width: 150px;
+  height: 150px;
+}
+
+.thumb-container .thumb {
+  width: 100%;
+}
+
+.details-container {
+  padding: 12px 0 0 5px;
+}
+
+.address {
+  width: 200px;
+  font-size: 2rem;
+  font-weight: bold;
+  display: block;
+}
+
+.address .street, .address .city {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cost {
+  font-size: 4.5rem;
+}
+
+.specs {
+  font-size: 1.8rem;
+}
+
+.built {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 1rem;
+}
+
